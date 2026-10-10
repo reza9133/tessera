@@ -1,0 +1,13 @@
+# Cloudflare Pages project. Deploy with:  npx wrangler pages deploy
+name = "tessera"
+compatibility_date = "2026-09-01"
+pages_build_output_dir = "./public"
+
+# Public settings served by functions/api/config.js. None of these is a secret.
+# After deploying contracts/tessera.py to Studionet, paste its address here and deploy again.
+[vars]
+CONTRACT_ADDRESS = "0x02416Ad258690cE1C0640665d3D4a6751BeE35e4"
+NETWORK_NAME = "GenLayer Studionet"
+CHAIN_ID = "61999"
+RPC_URL = "https://studio.genlayer.com/api"
+EXPLORER_URL = "https://explorer-studio.genlayer.com"

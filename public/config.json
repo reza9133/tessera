@@ -1,0 +1,7 @@
+{
+  "network": "GenLayer Studionet",
+  "chainId": 61999,
+  "rpc": "https://studio.genlayer.com/api",
+  "explorer": "https://explorer-studio.genlayer.com",
+  "contract": "0x02416Ad258690cE1C0640665d3D4a6751BeE35e4"
+}

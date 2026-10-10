@@ -1,0 +1,21 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+  Cross-Origin-Opener-Policy: same-origin
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://esm.sh; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://studio.genlayer.com https://esm.sh https://*.esm.sh https://*.genlayer.com; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; object-src 'none'
+
+/assets/*
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/vendor/*
+  Cache-Control: public, max-age=86400
+
+/demo/*
+  Cache-Control: public, max-age=300
+  X-Robots-Tag: noindex
+  Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; frame-ancestors 'none'
+
+/api/*
+  Cache-Control: no-store

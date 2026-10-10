@@ -1,0 +1,26 @@
+{
+  "name": "tessera",
+  "version": "1.0.0",
+  "description": "Agreements in plain words, settled by validator consensus on GenLayer Studionet.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "python3 -m unittest discover -s tests -t . && node --test tests/js/rules.test.mjs",
+    "test:py": "python3 -m unittest discover -s tests -t . -v",
+    "test:js": "node --test tests/js/rules.test.mjs",
+    "mutate": "python3 tools/mutate.py --write",
+    "vectors": "python3 tools/make_vectors.py",
+    "dev": "wrangler pages dev public --compatibility-date=2026-09-01",
+    "deploy": "wrangler pages deploy",
+    "deploy:contract": "node scripts/deploy.mjs --write",
+    "smoke": "node scripts/smoke.mjs",
+    "vendor": "node scripts/vendor-sdk.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "genlayer-js": "1.1.8",
+    "wrangler": "^4.0.0"
+  }
+}

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tessera: agreements that rule themselves</title>
+<meta name="description" content="Write a deal in plain words. Lock payment in escrow. Five independent validators read the evidence and rule: in full, in proportion, or back to you. Built on GenLayer.">
+<meta name="theme-color" content="#0A1042">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tessera: agreements that rule themselves">
+<meta property="og:description" content="Write the deal in plain words. Five validators decide if it was kept.">
+<meta property="og:image" content="/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Instrument+Sans:wght@400..700&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/assets/css/app.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-mark" viewBox="0 0 64 64"><path style="fill:var(--mark-l,#F1EFE6)" d="M14 12H33L29 21L36 29L28 38L34 46L30 52H14a8 8 0 0 1-8-8V20a8 8 0 0 1 8-8Z"/><path style="fill:var(--mark-r,#E9B949)" d="M36 12H50a8 8 0 0 1 8 8V44a8 8 0 0 1-8 8H33L37 46L31 38L39 29L32 21Z"/></symbol>
+<symbol id="i-word" viewBox="0 0 272 72"><g fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <!-- t -->
+    <path d="M8 8V47C8 56 13 60 21 60M0 26H21"/>
+    <!-- e -->
+    <path transform="translate(33 0)" d="M0 43H34A17 17 0 1 0 29 55"/>
+    <!-- s -->
+    <path transform="translate(75 0)" d="M30 32C30 26 24 26 17 26C10 26 5 29 5 34C5 40 10 42 17 43C25 44 30 46 30 52C30 58 24 60 17 60C10 60 4 58 4 52"/>
+    <!-- s -->
+    <path transform="translate(113 0)" d="M30 32C30 26 24 26 17 26C10 26 5 29 5 34C5 40 10 42 17 43C25 44 30 46 30 52C30 58 24 60 17 60C10 60 4 58 4 52"/>
+    <!-- e -->
+    <path transform="translate(155 0)" d="M0 43H34A17 17 0 1 0 29 55"/>
+    <!-- r -->
+    <path transform="translate(197 0)" d="M4 26V60M4 41C4 31 10 26 22 26"/>
+    <!-- a -->
+    <path transform="translate(231 0)" d="M34 43A17 17 0 0 0 0 43A17 17 0 0 0 34 43M34 26V60"/>
+  </g></symbol>
+<symbol id="gl-logo" viewBox="0 0 385.32 91.93"><g fill="currentColor"><path d="M296.72,79.83v-6.28h7.17l2.69-6.54-13.82-31.49h8.28l9.49,22.42h.26l9.18-22.42h7.96l-13.55,31.65-5.31,12.66h-12.36Z"/><path d="M106.14,46.33c0-13.83,8.72-22.96,22.42-22.96,11.51,0,19.01,6.2,19.76,15.19h-7.36c-1.29-5.38-5.31-8.45-9.2-8.45h-6.2c-6.34,0-11.99,7.15-11.99,16.08s5.79,15.94,12.54,15.94h4.57c5.04,0,8.99-3,10.63-6.2v-5.66h-10.97v-6.06h17.78v13.9c-2.73,5.31-8.86,10.77-19.62,10.77-13.56,0-22.35-8.31-22.35-22.55Z"/><path d="M153.44,51.78c0-10.42,6.95-17.17,17.1-17.17,9.61,0,16.01,5.86,16.01,17.51v1.64h-25.96c.68,4.97,3.82,8.86,8.52,8.86h2.93c3.68,0,6.06-2.25,6.81-5.11h7.09c-.89,6.54-6.27,11.38-15.6,11.38-10.77,0-16.9-7.22-16.9-17.1ZM179.33,48.31c-.34-4.57-3.54-7.43-7.02-7.43h-3.75c-3.75,0-6.75,2.93-7.7,7.43h18.46Z"/><path d="M191.68,34.61h17.85c8.04,0,12.74,4.57,12.74,12.95v20.37h-7.15v-19.15c0-4.7-2.38-7.49-5.79-7.49h-10.49v26.64h-7.15v-33.32Z"/><path d="M228.29,24.32h7.36v36.86h16.26v6.75h-23.62V24.32Z"/><path d="M253.95,51.71c0-10.08,6.54-17.1,15.88-17.1,4.84,0,8.79,2.25,10.9,4.84v-3.88h7.02v32.36h-7.02v-4.57c-2.45,3.13-6,5.52-11.11,5.52-9.4,0-15.67-7.02-15.67-17.17ZM269.15,62.48h4.29c4.02,0,7.09-3.41,7.09-7.84v-5.66c0-4.29-2.86-7.97-7.09-7.97h-4.29c-4.43,0-8.04,4.77-8.04,10.7s3.61,10.77,8.04,10.77Z"/><path d="M327.94,51.78c0-10.42,6.95-17.17,17.1-17.17,9.61,0,16.01,5.86,16.01,17.51v1.64h-25.96c.68,4.97,3.82,8.86,8.52,8.86h2.93c3.68,0,6.06-2.25,6.81-5.11h7.09c-.89,6.54-6.27,11.38-15.6,11.38-10.77,0-16.9-7.22-16.9-17.1ZM353.83,48.31c-.34-4.57-3.54-7.43-7.02-7.43h-3.75c-3.75,0-6.75,2.93-7.7,7.43h18.46Z"/><path d="M366.18,35.57h19.15v6.88h-11.99v25.48h-7.15v-32.36Z"/></g></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></g></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.5" r="1.2"/></g></symbol>
+<symbol id="i-link" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></g></symbol>
+<symbol id="i-quote" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h4v4c0 3-1.5 5-4 6M15 7h4v4c0 3-1.5 5-4 6"/></g></symbol>
+<symbol id="i-length" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 11h16M4 16h10M4 21h6"/></g></symbol>
+<symbol id="i-scale" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M6 20h12M5 7h14"/><path d="M5 7l-3 7a3 3 0 0 0 6 0L5 7ZM19 7l-3 7a3 3 0 0 0 6 0l-3-7Z"/></g></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></symbol>
+<symbol id="i-moon" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></g></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></g></symbol>
+</defs></svg>
+
+<div class="bg" aria-hidden="true"></div>
+
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#/" aria-label="Tessera, home"><svg class="mark" aria-hidden="true"><use href="#i-mark"/></svg><svg class="word" viewBox="0 0 272 72" aria-hidden="true"><use href="#i-word"/></svg></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#/docket" data-route="docket">Docket</a>
+      <a href="#/new" data-route="new">Draft a pact</a>
+      <a href="#/rules" data-route="rules">Rules</a>
+    </nav>
+    <div class="top-r" id="top-r"></div>
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="Menu"><svg aria-hidden="true"><use href="#i-menu"/></svg></button>
+  </div>
+</header>
+
+<main id="view" tabindex="-1">
+  <noscript><div class="wrap" style="padding:120px 24px"><h1>Tessera needs JavaScript.</h1><p class="muted">It talks to a blockchain from your browser, which cannot be done without it.</p></div></noscript>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div>
+      <a class="brand" href="#/" aria-label="Tessera"><svg class="mark" aria-hidden="true"><use href="#i-mark"/></svg><svg class="word" viewBox="0 0 272 72" aria-hidden="true"><use href="#i-word"/></svg></a>
+      <p class="fine">Agreements in plain words, settled by validator consensus. A consensus of models is a procedure, not a court, and nothing here is legal advice. Test funds only.</p>
+      <div class="gl">Built on <a href="https://docs.genlayer.com" target="_blank" rel="noopener noreferrer" aria-label="GenLayer"><svg viewBox="0 0 385.32 91.93" aria-hidden="true"><use href="#gl-logo"/></svg></a></div>
+    </div>
+    <div><h5>Product</h5><ul><li><a href="#/docket">Docket</a></li><li><a href="#/new">Draft a pact</a></li><li><a href="#/rules">How a ruling is made</a></li></ul></div>
+    <div><h5>Network</h5><ul id="foot-net"></ul><ul style="margin-top:9px"><li><a href="https://explorer-studio.genlayer.com" target="_blank" rel="noopener noreferrer">Studionet explorer</a></li><li><a href="https://docs.genlayer.com" target="_blank" rel="noopener noreferrer">GenLayer documentation</a></li></ul></div>
+  </div>
+</footer>
+
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>

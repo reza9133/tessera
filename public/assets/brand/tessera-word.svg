@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 72" role="img" aria-label="tessera">
+  <title>tessera</title>
+  <g fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <!-- t -->
+    <path d="M8 8V47C8 56 13 60 21 60M0 26H21"/>
+    <!-- e -->
+    <path transform="translate(33 0)" d="M0 43H34A17 17 0 1 0 29 55"/>
+    <!-- s -->
+    <path transform="translate(75 0)" d="M30 32C30 26 24 26 17 26C10 26 5 29 5 34C5 40 10 42 17 43C25 44 30 46 30 52C30 58 24 60 17 60C10 60 4 58 4 52"/>
+    <!-- s -->
+    <path transform="translate(113 0)" d="M30 32C30 26 24 26 17 26C10 26 5 29 5 34C5 40 10 42 17 43C25 44 30 46 30 52C30 58 24 60 17 60C10 60 4 58 4 52"/>
+    <!-- e -->
+    <path transform="translate(155 0)" d="M0 43H34A17 17 0 1 0 29 55"/>
+    <!-- r -->
+    <path transform="translate(197 0)" d="M4 26V60M4 41C4 31 10 26 22 26"/>
+    <!-- a -->
+    <path transform="translate(231 0)" d="M34 43A17 17 0 0 0 0 43A17 17 0 0 0 34 43M34 26V60"/>
+  </g>
+</svg>
