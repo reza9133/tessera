@@ -168,6 +168,8 @@ function ensureSession() {
 }
 
 function fillFooter(chain) {
+  const ex = $('#nav-explorer');
+  if (ex && chain.mode === 'live' && chain.info.contract) ex.href = chain.addressUrl(chain.info.contract);
   const el = $('#foot-net');
   if (!el) return;
   el.replaceChildren(chain.mode === 'live' && chain.info.contract
